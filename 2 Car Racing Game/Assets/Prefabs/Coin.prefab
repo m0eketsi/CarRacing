@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 46990665270111468}
   - component: {fileID: 8733046212228339704}
   - component: {fileID: 4733371789186013563}
+  - component: {fileID: 4532435578506927451}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -51666641
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 894011c555749ba4db4b999d7a7b8911, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -157,3 +158,16 @@ PolygonCollider2D:
       - {x: 0.3546468, y: -0.35803986}
       - {x: 0.47326928, y: -0.24970436}
       - {x: 0.5144702, y: -0.18482333}
+--- !u!114 &4532435578506927451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216813029224827833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0589af45d2a4fd6488885bc722e13f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 1

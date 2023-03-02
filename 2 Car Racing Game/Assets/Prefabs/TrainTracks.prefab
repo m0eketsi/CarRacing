@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4613088395955403483}
   - component: {fileID: 414052824589045495}
   - component: {fileID: 4636488958924199894}
+  - component: {fileID: 6049090048184035508}
   m_Layer: 0
   m_Name: Train
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8759878483212378488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalPosition: {x: 8.15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6630045509969775663}
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -51666641
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 78a17bd4bd590aa41b56a7d5a8d20a66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -130,6 +131,19 @@ PolygonCollider2D:
       - {x: 2.6599998, y: -0.945}
       - {x: 2.6799998, y: -0.895}
       - {x: 2.6799998, y: 1.2049999}
+--- !u!114 &6049090048184035508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8759878483212378488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8117938bfd9e4ab4aab09fe30ad4c972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &9195779863369930536
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +170,7 @@ Transform:
   m_GameObject: {fileID: 9195779863369930536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 55, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4613088395955403483}
   m_Father: {fileID: 0}

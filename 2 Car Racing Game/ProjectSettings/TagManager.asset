@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - slow
+  - obstacle
+  - coin
+  - boost
+  - gas
+  - Start Line
+  - Finish Line
+  - player
   layers:
   - Default
   - TransparentFX
