@@ -24,9 +24,9 @@ public class SpawnManager : MonoBehaviour
         float segmentGap = 0;
         Vector2 spawnPos = new Vector2(0, segmentGap);
 
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < RoadSegments.Length; i++)
         {
-            int index = Random.Range(1, 5);
+            int index = Random.Range(1, RoadSegments.Length);
             segmentGap += yValue;
             spawnPos = new Vector2(0, segmentGap);
             Instantiate(RoadSegments[index], spawnPos, RoadSegments[index].transform.rotation);

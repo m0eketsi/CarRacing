@@ -13,7 +13,6 @@ public class CarController : MonoBehaviour
     public GameObject waypoint;
     public Camera carCam;
     public GameObject zoomUI;
-    private float preBoostSpeed;
     private bool _crossedFinishLine = false;
 
     // Start is called before the first frame update
@@ -92,17 +91,16 @@ public class CarController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("boost"))
         {
-            preBoostSpeed = carSpeed;
             StartCoroutine(hitBoost());
         }
     }
     IEnumerator hitBoost()
     {
-        carSpeed = carSpeed + 8;
+        carSpeed = carSpeed + 6;
         carCam.orthographicSize = 9.4f;
         zoomUI.SetActive(true);
         yield return new WaitForSeconds(3f);
-        carSpeed = preBoostSpeed + 5;
+        carSpeed = carSpeed - .75f;
         carCam.orthographicSize = 9.6f;
         zoomUI.SetActive(false);
     }

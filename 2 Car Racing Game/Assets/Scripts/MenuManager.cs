@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("Game Mode");
     }
-    public void TwoCarButtonPressed()
+    public void SingleRaceButtonPressed()
     {
         SceneManager.LoadScene("Test");
     }
