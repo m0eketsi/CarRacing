@@ -7,7 +7,6 @@ public class CarController : MonoBehaviour
     public float carSpeed;
     public float accRate;
     public float steeringSpeed;
-    public string keys;
     public bool canMove;
     public float moveTime;
     public GameObject waypoint;
@@ -87,7 +86,9 @@ public class CarController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("slow"))
         {
-            carSpeed = carSpeed / 4;
+            carSpeed = carSpeed / 2;
+            carCam.orthographicSize = 9.6f;
+            zoomUI.SetActive(false);
         }
         if (other.gameObject.CompareTag("boost"))
         {
@@ -96,7 +97,7 @@ public class CarController : MonoBehaviour
     }
     IEnumerator hitBoost()
     {
-        carSpeed = carSpeed + 6;
+        carSpeed = carSpeed + 7;
         carCam.orthographicSize = 9.4f;
         zoomUI.SetActive(true);
         yield return new WaitForSeconds(3f);

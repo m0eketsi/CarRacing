@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     public float FollowOffset = 0;
     private Vector3 velocity = Vector3.zero;
     private bool nearEnd;
+    public float stopDist;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y >= 210)
+        if (transform.position.y >= stopDist)
         {
             nearEnd = true;
         }

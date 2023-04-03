@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9091480364993507215}
   - component: {fileID: 9091480364993507214}
+  - component: {fileID: 981092974965155933}
   m_Layer: 0
   m_Name: OpenSewage
   m_TagString: slow
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &981092974965155933
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9091480364993507213}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.23307216, y: -0.66108}
+  serializedVersion: 2
+  m_Radius: 0.77854264
